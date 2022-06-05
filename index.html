@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Rationale&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Juego del Ahorcado</title>
+</head>
+<body>
+    <header><img class="logo" alt="logotipo de alura" src="img/Vector-alura.svg"></header>
+    <main>
+        <section class="menu-principal">
+            <section class="titulo menu-principal">
+                <div class="recuadro">
+                    <h1 class="titulo-principal">El Ahorcado</h1>
+                </div>
+            </section>
+            
+            <section class="botones">
+                <div class="botones-contenedor">
+                    <button class="iniciar-juego menu-principal">Iniciar Juego</button>
+                    <button class="boton-agregar-palabra menu-principal">Agregar nueva palabra</button>
+                </div>
+            </section>
+        </section>
+
+        <section class="menu-juego ocultar">
+            <section class="palabra">
+                    <div class="palabra-escondida">
+                    </div>
+            </section>
+            
+    
+                <section class="canvas">
+                   <canvas id="canvas" width="400" height="470"></canvas>
+                </section>
+
+                <section class="contenedor-letras-repetidas">
+                    <span class="aviso-letra-usada-invisible">¡Letra repetida!</span>
+                    <textarea class="letras-repetidas" rows="2" cols="30" disabled></textarea>
+                </section>
+
+                <section class="botones-juego">
+                    <button class="volver-inicio">Volver al inicio</button>
+                    <button class="nuevo-juego">Nuevo Juego</button>
+                    <button class="desistir">Desistir</button>
+                </section>
+            </section>
+
+            <form onsubmit="submitForm(event)" class="menu-agregar-palabra ocultar">
+
+                <fieldset class="cuadro-agregar-palabra">
+                    <input type="text" maxlength="12" placeholder="Ingrese aquí su palabra" class="agregar-palabra" pattern="[A-Za-z]" title="Solo se permiten palabras en minúsculas, sin espacios y sin caracteres especiales." onkeypress="return(event.charCode >= 97 && event.charCode <= 122)">
+                </fieldset>
+
+                <fieldset class="botones-agregar-palabras">
+                    <p class="signo-exclamacion">!</p><p class="max-caracteres"> Máx. de 12 letras</p>
+                    <br>
+                    <button class="guardar-palabra">Guardar palabra</button>
+                    <button class="volver-inicio-2">Volver al inicio</button>
+                </fieldset>
+            </form>
+        
+            
+            
+    </main>
+    <footer> 
+        <div class="contenedor-footer">
+        <p> Desafio Alura - El ahorcado - Programa Oracle Next Education - Mauro Alesandro Peralta - 2022</p> 
+        <a href="https://github.com/MauroPeralta1595" target="_blank" rel="noopener noreferrer"><img class="logos" src="img/github.svg" alt="Logo de github/Enlace a github del autor de la página"></a> <a href="https://www.linkedin.com/in/mauro-peralta-057a5123a" target="_blank" rel="noopener noreferrer"><img class="logos" src="img/linkedin.svg" alt="Logo de Linkedin/Enlace a Linkedin del autor de la página"></a>
+
+    </div>
+    
+    </footer>
+    <script src="js/convertir-a-mayusculas.js"></script>
+    <script src="js/prevenir-envio-form.js"></script>
+    <script src="js/menu-iniciar-juego.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/volver-al-menu-desde-el-juego.js"></script>
+    <script src="js/volver-al-menu-desde-agregar-palabra.js"></script>
+    <script src="js/menu-agregar-nueva-palabra.js"></script>
+    <script src="js/guardar-palabra.js"></script>
+    <script src="js/palabra-secreta.js"></script>
+    <script src="js/validar-entrada.js"></script>
+    <script src="js/validar-entrada-juego.js"></script>
+    <script src="js/crear-letras.js"></script>
+</body>
+</html>
