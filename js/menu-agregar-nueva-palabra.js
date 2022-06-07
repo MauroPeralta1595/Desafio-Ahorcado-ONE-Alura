@@ -1,9 +1,9 @@
-const $botonMenuAgregarPalabra = document.querySelector(".boton-agregar-palabra");
-const $menuAgregarPalabra = document.querySelector(".menu-agregar-palabra");
+const BOTON_MENU_AGREGAR_PALABRA = document.querySelector(".boton-agregar-palabra");
+const MENU_AGREGAR_PALABRA = document.querySelector(".menu-agregar-palabra");
 
-$botonMenuAgregarPalabra.addEventListener("click",function(){
+BOTON_MENU_AGREGAR_PALABRA.addEventListener("click",function(){
 
-    $menuPrincipal.classList.add("ocultar");
-    $menuAgregarPalabra.classList.remove("ocultar");
+    MENU_PRINCIPAL.classList.add("ocultar");
+    MENU_AGREGAR_PALABRA.classList.remove("ocultar");
 
 });

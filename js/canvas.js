@@ -1,61 +1,61 @@
 function dibujarBase(){
-    ahorcado.moveTo(20, 420);
-    ahorcado.lineTo(215,420);
-    ahorcado.strokeStyle = "#ffffff";
-    ahorcado.lineWidth = 7;
-    ahorcado.stroke();
+    AHORCADO.moveTo(20, 420);
+    AHORCADO.lineTo(215,420);
+    AHORCADO.strokeStyle = "#ffffff";
+    AHORCADO.lineWidth = 7;
+    AHORCADO.stroke();
 }
 
 function dibujarPoste(){
-    ahorcado.moveTo(80, 420);
-    ahorcado.lineTo(80,10);
-    ahorcado.stroke();
+    AHORCADO.moveTo(80, 420);
+    AHORCADO.lineTo(80,10);
+    AHORCADO.stroke();
 }
 
 function dibujarContinuacionPoste(){
-    ahorcado.lineTo(255,10);
-    ahorcado.stroke();
+    AHORCADO.lineTo(255,10);
+    AHORCADO.stroke();
 }
 
 function dibujarSoga(){
-    ahorcado.lineTo(255,70);
-    ahorcado.stroke();
+    AHORCADO.lineTo(255,70);
+    AHORCADO.stroke();
 }
 
 function dibujarCabeza(){
-    ahorcado.beginPath();
-    ahorcado.arc(255, 105, 35, 0, 2*3.14);
-    ahorcado.lineWidth = 5;
-    ahorcado.stroke();
+    AHORCADO.beginPath();
+    AHORCADO.arc(255, 105, 35, 0, 2*3.14);
+    AHORCADO.lineWidth = 5;
+    AHORCADO.stroke();
 }
 
 function dibujarCuerpo(){
-    ahorcado.moveTo(255,137);
-    ahorcado.lineTo(255,240);
-    ahorcado.stroke();
+    AHORCADO.moveTo(255,137);
+    AHORCADO.lineTo(255,240);
+    AHORCADO.stroke();
 }
 
 function dibujarPiernaIzq(){
-    ahorcado.lineTo(210,320);
-    ahorcado.stroke();
+    AHORCADO.lineTo(210,320);
+    AHORCADO.stroke();
 }
 
 function dibujarPiernaDer(){
-    ahorcado.moveTo(255,240);
-    ahorcado.lineTo(300,320);
-    ahorcado.stroke();
+    AHORCADO.moveTo(255,240);
+    AHORCADO.lineTo(300,320);
+    AHORCADO.stroke();
 }
 
 function dibujarBrazoIzq(){
-    ahorcado.moveTo(255,155);
-    ahorcado.lineTo(210,230);
-    ahorcado.stroke();
+    AHORCADO.moveTo(255,155);
+    AHORCADO.lineTo(210,230);
+    AHORCADO.stroke();
 }
 
 function dibujarBrazoDer(){
-    ahorcado.moveTo(255,155);
-    ahorcado.lineTo(300,230);
-    ahorcado.stroke();
+    AHORCADO.moveTo(255,155);
+    AHORCADO.lineTo(300,230);
+    AHORCADO.stroke();
 }
 
 

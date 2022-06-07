@@ -1,15 +1,19 @@
-const $botonGuardarPalabra = document.querySelector(".guardar-palabra");
-const $palabraIngresada = document.querySelector(".agregar-palabra");
+const BOTON_GUARDAR_PALABRA = document.querySelector(".guardar-palabra");
+const PALABRA_INGRESADA = document.querySelector(".agregar-palabra");
 
-$botonGuardarPalabra.addEventListener("click",function(){
+BOTON_GUARDAR_PALABRA.addEventListener("click",function(){
 
-    const caracteresNoPermitidos = /[^a-z ]/;
-    let validar = caracteresNoPermitidos.test($palabraIngresada.value);
+    const CARACTERES_NO_PERMITIDOS = /[^a-z]/;
+    let validar = CARACTERES_NO_PERMITIDOS.test(PALABRA_INGRESADA.value);
 
-    if(!validar){
-        palabrasGuardadas.push($palabraIngresada.value);
-
-        $palabraIngresada.value = "";
+    if(!validar && PALABRA_INGRESADA.value != ''){
+        PALABRAS_SECRETAS[categoriaElegida].push(PALABRA_INGRESADA.value);
+        PALABRA_INGRESADA.value = "";
+        categoriaElegida = 3;
+        BOTON_PROGRAMACION.classList.remove('seleccionado');
+        BOTON_COMIDAS.classList.remove('seleccionado');
+        BOTON_PAIS.classList.remove('seleccionado');
+        BOTON_GENERAL.classList.remove('seleccionado');
     }else{
         return;
     };

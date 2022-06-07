@@ -1,8 +1,8 @@
-const $botonVolverAlMenu2 = document.querySelector(".volver-inicio-2");
+const BOTON_VOLVER_AL_MENU_2 = document.querySelector(".volver-inicio-2");
 
-$botonVolverAlMenu2.addEventListener("click",function(){
+BOTON_VOLVER_AL_MENU_2.addEventListener("click",function(){
     
-    $menuPrincipal.classList.remove("ocultar");
-    $menuAgregarPalabra.classList.add("ocultar");
+    MENU_PRINCIPAL.classList.remove("ocultar");
+    MENU_AGREGAR_PALABRA.classList.add("ocultar");
 
 })

@@ -1,13 +1,14 @@
-const $botonIniciarJuego = document.querySelector(".iniciar-juego");
-const $menuPrincipal = document.querySelector(".menu-principal");
-const $juego = document.querySelector(".menu-juego");
+const BOTON_INICIAR_JUEGO = document.querySelector(".iniciar-juego");
+const MENU_PRINCIPAL = document.querySelector(".menu-principal");
+const MENU_JUEGO = document.querySelector(".menu-juego");
 
-$botonIniciarJuego.addEventListener("click", function(){
-    $menuPrincipal.classList.add("ocultar");
-    $juego.classList.remove("ocultar");
-    canvas.width=canvas.width;
+BOTON_INICIAR_JUEGO.addEventListener("click", function(){
+    MENU_PRINCIPAL.classList.add("ocultar");
+    MENU_JUEGO.classList.remove("ocultar");
+    CANVAS.width=CANVAS.width;
     contadorErrores = 0;
     palabraSecreta = elegirPalabra();
     activadorJuego = 1;
     dibujarLetras();
+    mostrarRecuadroTematica();
 })

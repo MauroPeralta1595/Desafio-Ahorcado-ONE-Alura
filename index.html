@@ -34,13 +34,30 @@
                     <div class="palabra-escondida">
                     </div>
             </section>
+                
+                <section class="tematica ocultar">
+                    <div class="cuadro-tematica"> 
+                        <p class="texto-tematica"></p>
+                        <div class="contenedor-boton-img">
+                            <div class="contenedor-img comida ocultar"><img alt="dibujo de plato con comida" src="img/comida-animada.png"></div>
+                            <div class="contenedor-img programacion ocultar"><img alt="computadora/programación" src="img/computadora-programacion.png"></div>
+                            <div class="contenedor-img paises ocultar"><img alt="dibujo de nuestro planeta" src="img/tierra.png"></div>
+                            <div class="contenedor-img general ocultar"><img alt="imagenes de cultura general" src="img/cultura-general.png"></div>
+                            <button class="aceptar-tematica">Aceptar</button>
+                            <div class="contenedor-img general ocultar"><img alt="caja tipo dado con signos de pregunta" src="img/caja-preguntas.png"></div>
+                            <div class="contenedor-img paises ocultar"><img alt="globo terraqueo" src="img/globo-terraqueo.png"></div>
+                            <div class="contenedor-img programacion ocultar"><img alt="computadora/programación" src="img/programacion.png"></div>
+                            <div class="contenedor-img comida ocultar"><img alt="Cubiertos de cocina" src="img/cubiertos.png"></div>
+                        </div>
+                    </div>
+                </section>
 
                 <section class="ganaste ocultar">
                     <div class="cuadro-ganaste"> 
                         <img class="medalla" alt="medalla de felicitaciones" src="img/medalla.svg"> 
                         <p class="texto-ganaste">¡Felicitaciones ganaste!</p>
                         <img class="trofeo" alt="trofeo de felicitaciones" src="img/trofeo.svg">
-                        <button class="aceptar">Aceptar</button>
+                        <button class="aceptar-ganaste">Aceptar</button>
                     </div>
                 </section>
 
@@ -48,11 +65,12 @@
                     <div class="cuadro-perdiste"> 
                         <img class="emoji-triste" alt="emoji triste" src="img/cara-triste-blanco.png"> 
                         <p class="texto-perdiste">¡Perdiste!</p>
-                        <img class="error" alt="imagen de error" src="img/error.png">
-                        <button class="aceptar">Aceptar</button>
+                        <img class="emoji-triste" alt="emoji triste" src="img/cara-triste-blanco.png"> 
+                        <button class="aceptar-perdiste">Aceptar</button>
                     </div>
                 </section>
 
+                
         
                 <section class="canvas">
                    <canvas id="canvas" width="400" height="470"></canvas>
@@ -70,7 +88,15 @@
                 </section>
             </section>
 
-            <form onsubmit="submitForm(event)" class="menu-agregar-palabra ocultar">
+            <form onsubmit="submitForm(event)" class="menu-agregar-palabra">
+
+                <fieldset class="contenedor-opciones">
+                    <p>Seleccione la categoría</p>
+                    <button class="boton-programacion">Programacion</button>
+                    <button class="boton-pais">Paises</button>
+                    <button class="boton-comidas">Comidas</button>
+                    <button class="boton-general">General</button>
+                </fieldset>
 
                 <fieldset class="cuadro-agregar-palabra">
                     <input type="text" maxlength="12" placeholder="Ingrese aquí su palabra" class="agregar-palabra" pattern="[A-Za-z]" title="Solo se permiten palabras en minúsculas, sin espacios y sin caracteres especiales." onkeypress="return(event.charCode >= 97 && event.charCode <= 122)">
@@ -95,23 +121,27 @@
     </div>
     
     </footer>
-    <script src="js/variables-globales.js"></script>
-    <script src="js/convertir-a-mayusculas.js"></script>
-    <script src="js/prevenir-envio-form.js"></script>
-    <script src="js/menu-iniciar-juego.js"></script>
-    <script src="js/canvas.js"></script>
-    <script src="js/volver-al-menu-desde-el-juego.js"></script>
-    <script src="js/volver-al-menu-desde-agregar-palabra.js"></script>
-    <script src="js/menu-agregar-nueva-palabra.js"></script>
-    <script src="js/guardar-palabra.js"></script>
-    <script src="js/palabra-secreta.js"></script>
-    <script src="js/validar-entrada.js"></script>
-    <script src="js/validar-letra.js"></script>
-    <script src="js/crear-letras.js"></script>
     <script src="js/acerto-letra.js"></script>
-    <script src="js/verificar-si-gano.js"></script>
+    <script src="js/boton-aceptar.js"></script>
+    <script src="js/boton-aceptar-tematica.js"></script>
+    <script src="js/boton-nuevo-juego.js"></script>
+    <script src="js/botones-categorias.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/convertir-a-mayusculas.js"></script>
+    <script src="js/dibujar-letras.js"></script>
+    <script src="js/guardar-palabra.js"></script>
+    <script src="js/jugar-ahorcado.js"></script>
+    <script src="js/menu-agregar-nueva-palabra.js"></script>
+    <script src="js/menu-iniciar-juego.js"></script>
     <script src="js/mostrar-cuadro-ganador.js"></script>
     <script src="js/mostrar-cuadro-perdio.js"></script>
-
+    <script src="js/mostrar-cuadro-tematica.js"></script>
+    <script src="js/palabras-secretas.js"></script>
+    <script src="js/prevenir-envio-form.js"></script>
+    <script src="js/validar-entrada.js"></script>
+    <script src="js/variables-globales.js"></script>
+    <script src="js/verificar-si-gano.js"></script>
+    <script src="js/volver-al-menu-desde-agregar-palabra.js"></script>
+    <script src="js/volver-al-menu-desde-el-juego.js"></script>
 </body>
 </html>

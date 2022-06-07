@@ -11,16 +11,16 @@ window.addEventListener("keydown", function (event) {
                 verificarSiGano();
             } else{
                 if(verificarLetraIngresada.test(letrasRepetidas)){
-                    avisoLetraUsada.classList.remove("aviso-invisible");
+                    AVISO_LETRA_USADA.classList.remove("aviso-invisible");
                     setTimeout(function () {
-                        avisoLetraUsada.classList.add("aviso-invisible");
+                        AVISO_LETRA_USADA.classList.add("aviso-invisible");
                     }, 1100);
                     return;
 
                 }else{
                     DibujarAhorcado();
                     letrasRepetidas.push(letraIngresada.key);
-                    cuadroLetrasRepetidas.innerText = letrasRepetidas.join(' ');
+                    CUADRO_LETRAS_REPETIDAS.innerText = letrasRepetidas.join(' ');
                     if(contadorErrores === 10){
                         mostrarRecuadroPerdio();
                         activadorJuego = 0;

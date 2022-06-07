@@ -1,12 +1,12 @@
-const $botonVolverAlMenu = document.querySelector(".volver-inicio");
+const BOTON_VOLVER_AL_MENU = document.querySelector(".volver-inicio");
 
-$botonVolverAlMenu.addEventListener("click",function(){
-    $menuPrincipal.classList.remove("ocultar");
-    $juego.classList.add("ocultar");
-    canvas.width=canvas.width
+BOTON_VOLVER_AL_MENU.addEventListener("click",function(){
+    MENU_PRINCIPAL.classList.remove("ocultar");
+    MENU_JUEGO.classList.add("ocultar");
+    CANVAS.width=CANVAS.width
     contadorErrores = 0;
-    cuadroPalabraEscondida.innerHTML = '';
-    cuadroLetrasRepetidas.innerText = '';
+    CUADRO_PALABRA_ESCONDIDA.innerHTML = '';
+    CUADRO_LETRAS_REPETIDAS.innerText = '';
     letrasRepetidas = [];
     activadorJuego = 0;
     letrasCorrectas = [];
