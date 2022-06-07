@@ -34,14 +34,32 @@
                     <div class="palabra-escondida">
                     </div>
             </section>
-            
-    
+
+                <section class="ganaste ocultar">
+                    <div class="cuadro-ganaste"> 
+                        <img class="medalla" alt="medalla de felicitaciones" src="img/medalla.svg"> 
+                        <p class="texto-ganaste">¡Felicitaciones ganaste!</p>
+                        <img class="trofeo" alt="trofeo de felicitaciones" src="img/trofeo.svg">
+                        <button class="aceptar">Aceptar</button>
+                    </div>
+                </section>
+
+                <section class="perdiste ocultar">
+                    <div class="cuadro-perdiste"> 
+                        <img class="emoji-triste" alt="emoji triste" src="img/cara-triste-blanco.png"> 
+                        <p class="texto-perdiste">¡Perdiste!</p>
+                        <img class="error" alt="imagen de error" src="img/error.png">
+                        <button class="aceptar">Aceptar</button>
+                    </div>
+                </section>
+
+        
                 <section class="canvas">
                    <canvas id="canvas" width="400" height="470"></canvas>
                 </section>
 
                 <section class="contenedor-letras-repetidas">
-                    <span class="aviso-letra-usada-invisible">¡Letra repetida!</span>
+                    <span class="letra-usada aviso-invisible">¡Letra repetida!</span>
                     <textarea class="letras-repetidas" rows="2" cols="30" disabled></textarea>
                 </section>
 
@@ -77,6 +95,7 @@
     </div>
     
     </footer>
+    <script src="js/variables-globales.js"></script>
     <script src="js/convertir-a-mayusculas.js"></script>
     <script src="js/prevenir-envio-form.js"></script>
     <script src="js/menu-iniciar-juego.js"></script>
@@ -87,7 +106,12 @@
     <script src="js/guardar-palabra.js"></script>
     <script src="js/palabra-secreta.js"></script>
     <script src="js/validar-entrada.js"></script>
-    <script src="js/validar-entrada-juego.js"></script>
+    <script src="js/validar-letra.js"></script>
     <script src="js/crear-letras.js"></script>
+    <script src="js/acerto-letra.js"></script>
+    <script src="js/verificar-si-gano.js"></script>
+    <script src="js/mostrar-cuadro-ganador.js"></script>
+    <script src="js/mostrar-cuadro-perdio.js"></script>
+
 </body>
 </html>

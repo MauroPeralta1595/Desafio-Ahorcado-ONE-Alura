@@ -1,8 +1,8 @@
-cuadroPalabraEscondida = document.querySelector(".palabra-escondida");
+const cuadroPalabraEscondida = document.querySelector(".palabra-escondida");
 
 function elegirPalabra(){
     let indice1 = Math.round(Math.random()*2);
-    let indice2 = Math.round(Math.random()* palabrasSecretas[indice1].length);
+    let indice2 = Math.round(Math.random()*(palabrasSecretas[indice1].length-1));
     return palabrasSecretas[indice1][indice2]
 }
 
