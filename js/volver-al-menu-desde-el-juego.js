@@ -10,4 +10,5 @@ BOTON_VOLVER_AL_MENU.addEventListener("click",function(){
     letrasRepetidas = [];
     activadorJuego = 0;
     letrasCorrectas = [];
+    BOTON_DESISTIR.disabled = false;
 })
