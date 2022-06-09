@@ -9,6 +9,10 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+## Detalles
+Clásico juego "El ahorcado" creado para el desafío de Alura Latam bajo el programa ONE - Oracle Next Education. 
+- Creado puramente con Vanilla JS, CSS y HTML.
+
 ## Requisitos
 - Debe funcionar solo con letras mayúsculas;
 - No deben ser utilizadas letras con acentos ni caracteres especiales;
@@ -23,3 +27,5 @@
 ## Extras:
 - La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra".
 
+## Progreso
+Terminada toda la parte funcional de navegador, falta realizar la parte responsive. Actualización muy pronto.
