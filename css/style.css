@@ -16,10 +16,15 @@ main{
     position: relative;
 }
 
-.logo{
+.logo-alura{
     width:2.5%;
     margin-left: 2rem;
     margin-top: 1rem;
+    transition: all 0.4s;
+}
+
+.logo-alura:hover{
+    transform: scale(1.1);
 }
 
 .titulo-botones{
@@ -167,7 +172,26 @@ button:hover{
     text-decoration: underline solid white;
     text-underline-position: under;
     text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(8, 88, 68, 0.836);
 }
+
+.palabra-secreta-visible-perdiste{
+    font-size: 2.7rem;
+    padding: 3rem 0 0 0;
+    color: #fff/*#b80000*/;
+    font-family:'Roboto Mono', monospace;
+    text-align: center;
+    user-select: none;
+    letter-spacing: .1rem;
+    display:inline-block;
+    margin: 0 auto;
+    text-underline-position: under;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #ff000081;
+    text-decoration: underline solid white;
+}
+
+
 
 .tematica {
     position:absolute;
@@ -311,6 +335,45 @@ button:hover{
     margin:-11% auto;
 }
 
+.desistio {
+    position:absolute;
+    left:26%;
+    top:21%;
+    z-index: 1;
+    width: auto;
+}
+
+.cuadro-desistio{
+    border:4px solid rgb(202, 200, 200);
+    border-radius: 35px;
+    width: 65%;
+    height: 230px;
+    background-color: #1f3b35;
+    box-shadow: 5px 5px 15px rgb(46, 46, 46);
+}
+
+.texto-desistio{
+    display:inline-block;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Metrophobic', sans-serif;
+    letter-spacing: .1rem;
+    font-weight: 400;
+    color:white;
+    position:relative;
+    bottom:80px;
+    margin: 1.5rem 2rem;
+}
+
+.bandera-blanca{
+    display:inline-block;
+    width:17%;
+    margin: 2rem 1.5rem;
+}
+
+.aceptar-desistio{
+    margin:-11% auto;
+}
 
 .contenedor-letras-repetidas{
     display:block;
@@ -425,6 +488,37 @@ button:hover{
     color:white;
 }
 
+.contenedor-aviso-emergente{
+    height: 60%;
+    position:relative;
+    text-align: center;
+    width:40%;
+    margin: 0 auto;
+}
+
+.texto-emergente{
+    font-family: 'Metrophobic', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color:  #ffffff;
+    text-transform: none;
+    background-color: #2d7248;
+    border: 2px solid rgba(44, 44, 44, 0.6);
+    padding: .7rem 2rem;
+    border-radius: 30px;
+    letter-spacing: 1.5px;
+    opacity:0%;
+    transition: 0.5s;
+    display:inline-block;
+    margin: 7rem 0 0 0 ;
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 100%;
+}
+
+
 .signo-exclamacion{
     margin: 0 .5rem;
     display:inline-block;
@@ -466,6 +560,10 @@ button:hover{
 
 .volver-inicio-2{
     width:230px;
+}
+
+.error{
+    color: #ad0000de;
 }
 
 
@@ -511,17 +609,18 @@ footer a {
 
 .logos:hover{
     transform: scale(1.1);
-
 }
 
 .ocultar{
     display:none;
 }
 
+
+/*
 .menu-principal{
     display:none;
 }
-
+*/
 
 .ver-letra{
     color:white;
@@ -529,6 +628,7 @@ footer a {
 
 .blur{
     filter: blur(5px);
+    pointer-events: none;
 }
 
 
