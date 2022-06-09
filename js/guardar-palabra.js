@@ -14,6 +14,7 @@ BOTON_GUARDAR_PALABRA.addEventListener("click",function(){
         BOTON_COMIDAS.classList.remove('seleccionado');
         BOTON_PAIS.classList.remove('seleccionado');
         BOTON_GENERAL.classList.remove('seleccionado');
+        visibilizarAviso();
     }else{
         return;
     };
