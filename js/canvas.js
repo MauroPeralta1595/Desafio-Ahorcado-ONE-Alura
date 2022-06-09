@@ -1,3 +1,7 @@
+const CANVAS = document.querySelector("#canvas");
+const AHORCADO = CANVAS.getContext("2d");
+
+
 function dibujarBase(){
     AHORCADO.moveTo(20, 420);
     AHORCADO.lineTo(215,420);
@@ -59,8 +63,8 @@ function dibujarBrazoDer(){
 }
 
 
-function DibujarAhorcado()
-{
+function DibujarAhorcado(){
+    
     if(contadorErrores < 11){
         contadorErrores++;
     }
