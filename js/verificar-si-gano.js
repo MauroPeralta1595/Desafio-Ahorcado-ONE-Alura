@@ -1,3 +1,4 @@
+
 function verificarSiGano(){
     let palabraVisible = '';
     let letraVisible = document.querySelectorAll(".palabra p");
@@ -8,6 +9,7 @@ function verificarSiGano(){
     if (!(validarguion.test(palabraVisible))){
         mostrarRecuadroGano();
         activadorJuego = 0;
+        BOTON_DESISTIR.disabled = true;
         return;
     }else{
         return;
