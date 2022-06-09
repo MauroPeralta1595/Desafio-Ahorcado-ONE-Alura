@@ -1,3 +1,5 @@
+const AVISO_LETRA_USADA = document.querySelector(".letra-usada");
+const CUADRO_LETRAS_REPETIDAS = document.querySelector(".letras-repetidas");
 
 window.addEventListener("keydown", function (event) {
     if(activadorJuego === 0){
@@ -22,7 +24,13 @@ window.addEventListener("keydown", function (event) {
                     letrasRepetidas.push(letraIngresada.key);
                     CUADRO_LETRAS_REPETIDAS.innerText = letrasRepetidas.join(' ');
                     if(contadorErrores === 10){
+                        for (let i = 0; i < palabraSecreta.length; i++){
+                            let reemplazarletra = document.querySelector(`.posicion-${i}`);
+                            reemplazarletra.innerText = palabraSecreta[i];
+                            reemplazarletra.classList.replace("palabra-secreta", "palabra-secreta-visible-perdiste");
+                        }
                         mostrarRecuadroPerdio();
+                        BOTON_DESISTIR.disabled = true;
                         activadorJuego = 0;
                     }
                     return;
